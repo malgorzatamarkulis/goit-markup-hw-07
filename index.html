@@ -9,32 +9,112 @@
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/new_style.css">
 </head>
 
 <body>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="mobile-menu js-close-menu close-button">
+            <svg width="8" height="8">
+                <use href="./images/icon-close.svg#icon-close-black"></use>
+            </svg>
+        </button>
+
+        <ul class="mobile-menu margin-top-80">
+
+            <li><a href="./index.html" class="link color-navy">
+                    <h2 class="text-align-left margin-bottom-40 color-navy p-0 ">Studio</h2>
+                </a></li>
+            <li><a href="./portfolio.html" class="link">
+                    <h2 class="text-align-left margin-bottom-40 color-navy p-0">Portfolio</h2>
+                </a></li>
+            <li><a href="" class="link">
+                    <h2 class="text-align-left margin-bottom-40 p-0 color-navy">Contacts</h2>
+                </a></li>
+            <ul classf="lex gap-regular justify-content-end wrap">
+                <li><a class="contact-link transition-quick-all color-iris mobile-menu-tel"
+                       href="tel:+11(000)111-11-11">+11(000)111-11-11</a>
+                <li><a class="contact-link transition-quick-all color-navy mobile-menu-mail"
+                       href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+
+                </li>
+            </ul>
+            <div id="social-media">
+                <span class="display-block body-medium margin-bottom-medium font-color-white ">Social media</span>
+                <ul class="display-flex justify-content-center column-gap-small mobile-menu-icons">
+                    <li>
+                        <a href="#" class="social-media-svg">
+                            <svg class="social-media">
+                                <use href="./images/icons.svg#icon-instagram-2"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-media-svg">
+                            <svg class="social-media">
+                                <use href="./images/icons.svg#icon-twitter-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+
+                        <a href="#" class="social-media-svg">
+                            <svg class="social-media">
+                                <use href="./images/icons.svg#icon-Ellipse"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="column-gap-small">
+                        <a href="#" class="social-media-svg">
+                            <svg class="social-media">
+                                <use href="./images/icons.svg#icon-in"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </ul>
+    </div>
     <header class="header-border">
-        <div class="container flex space-between margin-right-auto">
-            <nav class="margin-right-auto display-flex">
+        <div class="container ">
+            <nav class="margin-right-auto flex align-items-center space-between width-100">
                 <a class="homepage-link" href="./index.html"><span>Web</span>Studio</a>
-                <ul class="flex gap-regular nav-link-color">
+                <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="22" viewBox="0 0 32 22" fill="none">
+                        <g clip-path="url(#clip0_297053_2156)">
+                            <path d="M1.34766 20.0431H30.8861M1.34766 10.7354H30.8861M1.34766 1.42773H30.8861"
+                                  stroke="#2E2F42" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_297053_2156">
+                                <rect width="32" height="22" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </button>
+                <ul class="flex gap-regular nav-link-color menu-to-hide px-332">
                     <li><a class="nav-link  text-shadow transition-quick-all nav-link-item "
                            href="./index.html">Studio</a></li>
                     <li><a class="nav-link text-shadow transition-quick-all" href="./portfolio.html">Portfolio</a>
                     </li>
                     <li><a class="nav-link text-shadow transition-quick-all" href="#0">Contacts</a></li>
                 </ul>
+                <ul class="flex gap-regular justify-content-end wrap menu-to-hide">
+                    <li><a class="contact-link transition-quick-all"
+                           href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li><a class="contact-link transition-quick-all" href="tel:+11(000)111-11-11">+11(000)111-11-11</a>
+                    </li>
+                </ul>
+
             </nav>
-            <ul class="flex gap-regular">
-                <li><a class="contact-link transition-quick-all" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                </li>
-                <li><a class="contact-link transition-quick-all" href="tel:+11(000)111-11-11">+11(000)111-11-11</a>
-                </li>
-            </ul>
+
         </div>
 
     </header>
     <main>
-        <section class="hero-section">
+        <section class="hero-section hero-image">
             <div class="container">
                 <h1>Effective Solutions for Your Business</h1>
                 <button type="button" class="button-white transition-quick-all button-primary button-pointer"
@@ -92,15 +172,13 @@
                             </div>
                         </form>
                     </div>
-
-
                 </div>
             </div>
-            </div>
+
         </section>
         <section class="boasting p-t-120 p-b-120">
             <div class="container ">
-                <ul class="flex column-gap-small">
+                <ul class="flex wrap column-gap-small row-gap-72 justify-content-center">
                     <li>
                         <div class="icon-section1 background-icons">
                             <svg class="icons-size ">
@@ -109,11 +187,7 @@
                         </div>
                         <h3>Strategy</h3>
                         <p class="body-medium font-color-slate p-color">Our goal is to identify the business problem to
-                            walk
-                            away
-                            with
-                            the
-                            perfect and creative solution.</p>
+                            walk away with the perfect and creative solution.</p>
                     </li>
                     <li>
                         <div class="icon-section1 background-icons">
@@ -160,23 +234,23 @@
                 </ul>
             </div>
         </section>
-        <section class="what-we-are-doing p-b-120">
+        <section id="what-we-are-doing" class="p-b-120">
             <div class="container">
                 <h2>What are we doing</h2>
-                <ul class="flex column-gap-small ">
+                <ul class="flex column-gap-small justify-content-center ">
                     <li>
                         <figure>
-                            <img src="images/photo1.jpg" width="360" height="300" alt="photo1">
+                            <img class="max-width-100" src="images/photo1.jpg" alt="photo1">
                         </figure>
                     </li>
                     <li>
                         <figure>
-                            <img src="images/photo2.jpg" width="360" height="300" alt="photo2">
+                            <img class="max-width-100" src="images/photo2.jpg" alt="photo2">
                         </figure>
                     </li>
                     <li>
                         <figure>
-                            <img src="images/photo3.jpg" width="360" height="300" alt="photo3">
+                            <img class="max-width-100" src="images/photo3.jpg" alt="photo3">
                         </figure>
                     </li>
                 </ul>
@@ -185,14 +259,14 @@
         <section class="our-team cloud-background p-t-120 p-b-120">
             <div class="container">
                 <h2>Our Team</h2>
-                <ul class="flex column-gap-small row-gap-small">
+                <ul class="flex wrap column-gap-small row-gap-small justify-content-center">
                     <li>
                         <figure>
                             <img src="images/personone.jpg" width="264" height="260" alt="personone">
                             <figcaption class="box-shadow">
                                 <h3>Mark Guerrero</h3>
                                 <p class="body-medium font-color-slate p-color">Product Designer</p>
-                                <ul class="display-flex justify-content-center column-gap-small">
+                                <ul class="display-flex justify-content-center column-gap-small ">
                                     <li>
                                         <a href="#" class="social-media-svg person-hover">
                                             <svg class="social-media-person">
@@ -351,56 +425,57 @@
         </section>
     </main>
     <section class="customers-background ">
-        <h2 class="p-t-120">Customers</h2>
+        <div class="container">
+            <h2 class="p-t-120">Customers</h2>
+            <ul class="display-flex justify-content-center  row-gap-small wrap p-b-120 column-gap-small-21 ">
 
-        <ul class="display-flex justify-content-center column-gap-small row-gap-small wrap">
-
-            <li>
-                <a href="#" class="transition-quick-all">
-                    <svg class="logo-customers fill-lightslate ">
-                        <use href="./images/icons.svg#icon-Logo"></use>
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="transition-quick-all">
-                    <svg class="logo-customers fill-lightslate">
-                        <use href="./images/icons.svg#icon-Logo-1"></use>
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="transition-quick-all">
-                    <svg class="logo-customers fill-lightslate">
-                        <use href="./images/icons.svg#icon-Logo-2"></use>
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="transition-quick-all">
-                    <svg class="logo-customers fill-lightslate">
-                        <use href="./images/icons.svg#icon-Logo-5"></use>
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="transition-quick-all">
-                    <svg class="logo-customers fill-lightslate">
-                        <use href="./images/icons.svg#icon-Logo-3"></use>
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="transition-quick-all">
-                    <svg class="logo-customers fill-lightslate ">
-                        <use href="./images/icons.svg#icon-Logo-4"></use>
-                    </svg>
-                </a>
-            </li>
-        </ul>
+                <li>
+                    <a href="#" class="transition-quick-all">
+                        <svg class="logo-customers fill-lightslate ">
+                            <use href="./images/icons.svg#icon-Logo"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="transition-quick-all">
+                        <svg class="logo-customers fill-lightslate">
+                            <use href="./images/icons.svg#icon-Logo-1"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="transition-quick-all">
+                        <svg class="logo-customers fill-lightslate">
+                            <use href="./images/icons.svg#icon-Logo-2"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="transition-quick-all">
+                        <svg class="logo-customers fill-lightslate">
+                            <use href="./images/icons.svg#icon-Logo-5"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="transition-quick-all">
+                        <svg class="logo-customers fill-lightslate">
+                            <use href="./images/icons.svg#icon-Logo-3"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="transition-quick-all">
+                        <svg class="logo-customers fill-lightslate ">
+                            <use href="./images/icons.svg#icon-Logo-4"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </section>
     <footer>
-        <div class="container flex gap-small">
+        <div class="container flex wrap gap-small">
             <div id="homepage" class="inner-container">
                 <a class="homepage-link" href="#"><span>web</span>studio</a>
                 <p class="font-color-cloud p-color"> Increase the flow of customers and sales for your business with
@@ -443,8 +518,10 @@
                 </ul>
             </div>
             <form class="email-form">
-                <label class="margin-bottom-medium display-block " for="email">Subscribe</label>
-                <input class="px-16" type="email" id="email" name="email" placeholder="E-mail">
+                <div class="flex">
+                    <label class="margin-bottom-medium display-block " for="email">Subscribe</label>
+                    <input class="px-16" type="email" name="email" placeholder="E-mail">
+                </div>
                 <button class="submit-button flex" type="submit">Subscribe
                     <svg class="social-media fill-white ">
                         <use href="./images/icons-form.svg#icon-Frame"></use>
@@ -453,8 +530,8 @@
             </form>
         </div>
     </footer>
-    <script src="js/modal.js">
-    </script>
 </body>
 
 </html>
+<script src="./js/modal.js"></script>
+<script src="./js/mobile-menu.js"></script>
