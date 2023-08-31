@@ -1,8 +1,8 @@
 module.exports = {
     "breakPoints": {
-      "sm": "@media screen(min-width=576px)",
-      "md": "@media screen(min-width=768px)",
-      "lg": "@media screen(min-width=992px)"
+      "sm": "@media screen and(min-width: 576px)",
+      "md": "@media screen and(min-width: 768px)",
+      "lg": "@media screen and(min-width: 992px)"
     },
     "custom": {
       "1rem": "1rem",

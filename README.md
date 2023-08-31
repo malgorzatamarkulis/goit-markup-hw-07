@@ -7,5 +7,6 @@ atomizer -o ./dist/output.css --watch *.html
 --watch index.html - obserwuj plik index.html
 --watch *.html - obserwuj wszyystkie pliki html
 Ctrl+C - zatrzymanie dowolnego programu w terminalu
+Breakpointy ustawić w atomizer.config.js
 
 Należy dodać import     <link rel="stylesheet" href="./css/new_style.css">
