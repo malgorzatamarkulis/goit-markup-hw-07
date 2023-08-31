@@ -5,11 +5,19 @@
 
   // Check if all required elements are found
   if (!mobileMenu || !openMenuBtn || !closeMenuBtn) {
-    console.error("Required elements not found. Check your HTML structure.");
-    return;
+    if (!mobileMenu) {
+      console.error("Mobile menu element not found. Check your HTML structure.");
+    }
+    if (!openMenuBtn) {
+      console.error("Open menu button element not found. Check your HTML structure.");
+    }
+    if (!closeMenuBtn) {
+      console.error("Close menu button element not found. Check your HTML structure.");
+    }
   } else {
     console.log("Elements found", mobileMenu, openMenuBtn, closeMenuBtn);
   }
+
   const toggleMenu = () => {
     const isMenuOpen = openMenuBtn.getAttribute("aria-expanded") === "true" || false;
     openMenuBtn.setAttribute("aria-expanded", !isMenuOpen);

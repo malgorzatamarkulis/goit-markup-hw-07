@@ -23,18 +23,18 @@
         <ul class="mobile-menu margin-top-80">
 
             <li><a href="./index.html" class="link color-navy">
-                    <h2 class="text-align-left margin-bottom-40 color-navy p-0 ">Studio</h2>
+                    <h2 class="text-align-left margin-bottom-40 p-0 color-iris">Studio</h2>
                 </a></li>
             <li><a href="./portfolio.html" class="link">
-                    <h2 class="text-align-left margin-bottom-40 color-navy p-0">Portfolio</h2>
+                    <h2 class="text-align-left margin-bottom-40 p-0">Portfolio</h2>
                 </a></li>
             <li><a href="" class="link">
-                    <h2 class="text-align-left margin-bottom-40 p-0 color-navy">Contacts</h2>
+                    <h2 class="text-align-left margin-bottom-40 p-0">Contacts</h2>
                 </a></li>
             <ul classf="lex gap-regular justify-content-end wrap">
                 <li><a class="contact-link transition-quick-all color-iris mobile-menu-tel"
                        href="tel:+11(000)111-11-11">+11(000)111-11-11</a>
-                <li><a class="contact-link transition-quick-all color-navy mobile-menu-mail"
+                <li><a class="contact-link transition-quick-all mobile-menu-mail"
                        href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
 
@@ -93,7 +93,7 @@
                         </defs>
                     </svg>
                 </button>
-                <ul class="flex gap-regular nav-link-color menu-to-hide px-332">
+                <ul class="flex gap-regular nav-link-color menu-to-hide margin-0-120">
                     <li><a class="nav-link  text-shadow transition-quick-all nav-link-item "
                            href="./index.html">Studio</a></li>
                     <li><a class="nav-link text-shadow transition-quick-all" href="./portfolio.html">Portfolio</a>
@@ -240,17 +240,24 @@
                 <ul class="flex column-gap-small justify-content-center ">
                     <li>
                         <figure>
-                            <img class="max-width-100" src="images/photo1.jpg" alt="photo1">
+                            <img src="images/photo1.jpg" srcset="images/photo1@2x.jpg 2x" alt="Photo 1" width="360"
+                                 height="300" />
                         </figure>
                     </li>
                     <li>
                         <figure>
-                            <img class="max-width-100" src="images/photo2.jpg" alt="photo2">
+                            <figure>
+                                <img src="images/photo2.jpg" srcset="images/photo2@2x.jpg 2x" alt="Photo 1" width="360"
+                                     height="300" />
+                            </figure>
                         </figure>
                     </li>
                     <li>
                         <figure>
-                            <img class="max-width-100" src="images/photo3.jpg" alt="photo3">
+                            <figure>
+                                <img src="images/photo3.jpg" srcset="images/photo3@2x.jpg 2x" alt="Photo 1" width="360"
+                                     height="300" />
+                            </figure>
                         </figure>
                     </li>
                 </ul>
@@ -262,7 +269,8 @@
                 <ul class="flex wrap column-gap-small row-gap-small justify-content-center">
                     <li>
                         <figure>
-                            <img src="images/personone.jpg" width="264" height="260" alt="personone">
+                            <img src="images/personone.jpg" srcset="images/personone@2x.jpg 2x" alt="Mark Guerrero"
+                                 width="264" height="260" />
                             <figcaption class="box-shadow">
                                 <h3>Mark Guerrero</h3>
                                 <p class="body-medium font-color-slate p-color">Product Designer</p>
@@ -302,7 +310,8 @@
                     </li>
                     <li>
                         <figure>
-                            <img src="images/persontwo.jpg" width="264" height="260" alt="persontwo">
+                            <img src="images/persontwo.jpg" srcset="images/persontwo@2x.jpg 2x" alt="Mark Guerrero"
+                                 width="264" height="260" />
                             <figcaption class="box-shadow">
                                 <h3>Tom Ford</h3>
                                 <p class="body-medium font-color-slate p-color">Frontend Developer</p>
@@ -342,7 +351,8 @@
                     </li>
                     <li>
                         <figure>
-                            <img src="images/personthree.jpg" width="264" height="260" alt="personthree">
+                            <img src="images/personthree.jpg" srcset="images/personthree@2x.jpg 2x" alt="Mark Guerrero"
+                                 width="264" height="260" />
                             <figcaption class="box-shadow">
                                 <h3>Camila Garcia</h3>
                                 <p class="body-medium font-color-slate p-color">Marketing</p>
@@ -382,7 +392,8 @@
                     </li>
                     <li>
                         <figure>
-                            <img src="images/personfour.jpg" width="264" height="260" alt="personfour">
+                            <img src="images/personfour.jpg.jpg" srcset="images/personfour@2x.jpg 2x"
+                                 alt="Mark Guerrero" width="264" height="260" />
                             <figcaption class="box-shadow">
                                 <h3>Daniel Wilson</h3>
                                 <p class="body-medium font-color-slate p-color">UI Designer</p>
@@ -518,8 +529,8 @@
                 </ul>
             </div>
             <form class="email-form">
-                <div class="flex">
-                    <label class="margin-bottom-medium display-block " for="email">Subscribe</label>
+                <div class="flex subscribe-placeholder">
+                    <label class="display-block " for="email">Subscribe</label>
                     <input class="px-16" type="email" name="email" placeholder="E-mail">
                 </div>
                 <button class="submit-button flex" type="submit">Subscribe
