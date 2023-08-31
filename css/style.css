@@ -948,7 +948,7 @@ input[type="checkbox"] {
   max-height: 432px;
   padding-top: 112px;
   padding-bottom: 112px;
-  background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/heroimage.jpg);
+  background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(./images/heroimage.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
