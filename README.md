@@ -9,4 +9,4 @@ atomizer -o ./dist/output.css --watch *.html
 Ctrl+C - zatrzymanie dowolnego programu w terminalu
 Breakpointy ustawić w atomizer.config.js
 
-Należy dodać import     <link rel="stylesheet" href="./css/new_style.css">
+Należy dodać import     
